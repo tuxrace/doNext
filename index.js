@@ -1,0 +1,1 @@
+const doNext = require('./src/doNext')
