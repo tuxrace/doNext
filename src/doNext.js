@@ -1,8 +1,17 @@
 function callNext(gen, prev){
-    prev.then(r => callNext(gen, gen.next(r)))
+    if (prev.done === false){
+        prev.value
+            .then(function(result){
+                callNext(gen, gen.next(result))
+            })
+    }
 }
 
 function doNext(genFunc){
     const gen = genFunc()
-    gen.next().value.then(r => callNext(gen, gen.next(r)));
+    const startGen = gen.next()
+    startGen.value
+        .then(function(r) {
+            callNext(gen, gen.next(r))
+        })
 }
