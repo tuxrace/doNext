@@ -6,10 +6,10 @@ A generator based control flow library, similar to tj/co
     const doNext = require('./src/doNext')
 
     doNext(function* (){  
-        const { userId: uid, title } = yield doFetch('http://jsonplaceholder.typicode.com/posts/52')
+        const { userId: uid, title } = yield fetch('http://jsonplaceholder.typicode.com/posts/52').then(result => result.json())
         console.log(uid)
         
-        const { name } = yield doFetch(`http://jsonplaceholder.typicode.com/users/${uid}`)
+        const { name } = yield doFetch(`http://jsonplaceholder.typicode.com/users/${uid}`).then(result => result.json())
         console.log(name)  
         
         console.log(`${title.toUpperCase()} by ${name}`)
