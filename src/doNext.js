@@ -15,3 +15,5 @@ function doNext(genFunc){
             callNext(gen, gen.next(r))
         })
 }
+
+module.exports = doNext
