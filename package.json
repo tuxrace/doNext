@@ -1,5 +1,5 @@
 {
-  "name": "donext",
+  "name": "do-next",
   "version": "1.0.0",
   "description": "A generator based control flow library, similar to tj/co",
   "main": "index.js",
