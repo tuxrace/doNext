@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "A generator based control flow library, similar to tj/co",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "mocha": "^3.4.2"
+  },
   "devDependencies": {},
   "scripts": {
     "test": "mocha"
