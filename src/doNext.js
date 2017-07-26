@@ -16,4 +16,4 @@ function doNext (genFunc) {
     })
 }
 
-module.exports = doNext;
+module.exports = doNext
