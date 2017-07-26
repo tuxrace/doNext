@@ -1,6 +1,8 @@
 # doNext
 A generator based control flow library, similar to tj/co
 
+ ![](https://travis-ci.org/tuxrace/doNext.svg?branch=master)
+
 ## Example
     
     const doNext = require('./src/doNext')
