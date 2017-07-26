@@ -1,0 +1,22 @@
+{
+  "name": "doNext",
+  "version": "1.0.0",
+  "description": "A generator based control flow library, similar to tj/co",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tuxrace/doNext.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tuxrace/doNext/issues"
+  },
+  "homepage": "https://github.com/tuxrace/doNext#readme"
+}
