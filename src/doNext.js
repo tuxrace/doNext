@@ -11,7 +11,7 @@ function doNext (genFunc) {
   const gen = genFunc();
   const startGen = gen.next();
   startGen.value
-    .then((re) => {
+    .then((r) => {
       callNext(gen, gen.next(r));
     });
 }
