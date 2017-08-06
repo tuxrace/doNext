@@ -1,4 +1,4 @@
-function callNext (gen, prev) {
+function callNext(gen, prev) {
   if (prev.done === false) {
     prev.value
       .then((result) => {
@@ -7,7 +7,7 @@ function callNext (gen, prev) {
   }
 }
 
-function doNext (genFunc) {
+function doNext(genFunc) {
   const gen = genFunc();
   const startGen = gen.next();
   startGen.value
