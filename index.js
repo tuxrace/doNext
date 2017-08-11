@@ -1,1 +1,1 @@
-const doNext = require('./src/doNext')
+require('./src/doNext');

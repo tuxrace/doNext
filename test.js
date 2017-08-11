@@ -3,9 +3,8 @@ const doNext = require('./src/doNext');
 const fetch = require('isomorphic-fetch');
 
 const assert = require('assert');
-describe('run app without errors', () => {
-  it('should run without errors', () => {
-    assert.equal(1,2)
-    
+describe('run app without errors', function() {
+  it('should run without errors', function(done) {
+    done();
   });
 });

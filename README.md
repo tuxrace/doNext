@@ -1,5 +1,5 @@
 # doNext
-A generator based control flow library, similar to tj/co
+> A generator based control flow library, similar to tj/co
 
  ![](https://travis-ci.org/tuxrace/doNext.svg?branch=master)
 
@@ -16,3 +16,7 @@ A generator based control flow library, similar to tj/co
         
         console.log(`${title.toUpperCase()} by ${name}`)
     })
+
+## Licensing
+
+  MIT
