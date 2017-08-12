@@ -6,7 +6,8 @@
   "dependencies": {
     "eslint": "^4.3.0",
     "isomorphic-fetch": "^2.2.1",
-    "mocha": "^3.4.2"
+    "mocha": "^3.4.2",
+    "pre-commit": "^1.2.2"
   },
   "devDependencies": {
     "eslint-config-standard": "^10.2.1",
@@ -19,6 +20,10 @@
     "test": "mocha",
     "lint": "./node_modules/.bin/eslint ./src"
   },
+  "pre-commit":[
+    "lint",
+    "test"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tuxrace/doNext.git"

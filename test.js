@@ -1,10 +1,16 @@
 const { describe, it } = require('mocha');
 const doNext = require('./src/doNext');
-const fetch = require('isomorphic-fetch');
+
+const someData = () => new Promise((resolve, reject) => resolve(1));
 
 const assert = require('assert');
 describe('run app without errors', function() {
-  it('should run without errors', function(done) {
-    done();
+  it('should not break', function(done) {
+    doNext(function* (){
+      const result = yield someData();      
+      assert.equal(result,1);
+      
+      done();      
+    });    
   });
 });
